@@ -21,7 +21,7 @@ function App() {
   return (
     <div>
       <h1 className="text-2xl text-center mt-9">Hello Dev</h1>
-      <ul>
+      <ul className="text-center">
         {data?.lessons.map((lesson) => {
           return <li key={lesson.id}>{lesson.title}</li>;
         })}
