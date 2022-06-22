@@ -1,9 +1,10 @@
+import Router from "./components/Router";
 import Evento from "./pages/Evento";
 
 function App() {
   return (
     <div>
-      <Evento />
+      <Router />
     </div>
   );
 }
