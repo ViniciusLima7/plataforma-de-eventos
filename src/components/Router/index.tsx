@@ -9,7 +9,7 @@ export default function Router() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<h1>Home</h1>}></Route>
-          <Route path="/evento" element={<Evento />}></Route>
+          <Route path="/event/lesson/:slug" element={<Evento />}></Route>
         </Routes>
       </BrowserRouter>
     </ApolloProvider>
