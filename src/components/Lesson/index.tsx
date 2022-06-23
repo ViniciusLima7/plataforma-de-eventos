@@ -36,9 +36,15 @@ export default function Lesson(props: LessonProps) {
               Em breve
             </span>
           )}
-          <span className="text-xs rounded px-2 py-[0.125rem] text-white border border-green-300 font-bold ">
-            {props.type === "live" ? "AO VIVO" : "AULA PRÁTICA"}
-          </span>
+          {props.type === "live" ? (
+            <span className="text-xs rounded px-2 py-[0.125rem] text-red-600 border border-red-800  font-bold ">
+              AO VIVO
+            </span>
+          ) : (
+            <span className="text-xs rounded px-2 py-[0.125rem] text-white border border-green-300 font-bold ">
+              AULA PRÁTICA
+            </span>
+          )}
         </header>
         <strong className="text-gray-200 mt-5 block">{props.title}</strong>
       </div>
