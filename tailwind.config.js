@@ -6,7 +6,7 @@ module.exports = {
       fontFamily: {
         sans: "Roboto, sans-serif",
       },
-      color: {
+      colors: {
         green: {
           300: "#00B37E",
           500: "#00875F",
