@@ -1,6 +1,7 @@
 import { gql, useMutation } from "@apollo/client";
 import React, { FormEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Footer from "../../components/Footer";
 import { Logo } from "../../components/Logo";
 
 const CREATE_INSCRICAO_MUTATION = gql`
@@ -83,6 +84,7 @@ export default function Inscricao() {
       </div>
 
       <img src="/src/assets/code-mockup.png" className="mt-10" alt="" />
+      <Footer />
     </div>
   );
 }
