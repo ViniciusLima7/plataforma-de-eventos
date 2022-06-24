@@ -8,6 +8,7 @@ import {
   Lightning,
 } from "phosphor-react";
 import Lesson from "../Lesson";
+import Footer from "../Footer";
 
 const GET_LESSON_BY_SLUG_QUERY = gql`
   query GetLessonBySlug($slug: String) {
@@ -68,7 +69,6 @@ export default function Video(props: VideoProps) {
           </Player>
         </div>
       </div>
-
       <div className="p-8 max-w-[1100px] mx-auto">
         <div className="flex items-start gap-16">
           <div className="flex-1">
@@ -153,6 +153,7 @@ export default function Video(props: VideoProps) {
           </a>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
