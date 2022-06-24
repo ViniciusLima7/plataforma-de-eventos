@@ -9,6 +9,7 @@ import {
 } from "phosphor-react";
 import Lesson from "../Lesson";
 import Footer from "../Footer";
+import Card from "../Card";
 
 const GET_LESSON_BY_SLUG_QUERY = gql`
   query GetLessonBySlug($slug: String) {
@@ -114,43 +115,16 @@ export default function Video(props: VideoProps) {
           </div>
         </div>
         <div className="gap-8 mt-20 grid grid-cols-2">
-          <a
-            href=""
-            className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors"
-          >
-            <div className="bg-green-700 h-full p-6 flex items-center">
-              <FileArrowDown size={40} />
-            </div>
-            <div className="py-6 leading-relaxed">
-              <strong className="text-2xl">Material Complementar</strong>
-              <p className="text-sm text-gray-200 mt-2">
-                Acesse o material complementar para acelerar o seu
-                desenvolvimento
-              </p>
-            </div>
-            <div className="h-full p-6 flex items-center">
-              <CaretRight size={24} />
-            </div>
-          </a>
-
-          <a
-            href=""
-            className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors"
-          >
-            <div className="bg-green-700 h-full p-6 flex items-center">
-              <FileArrowDown size={40} />
-            </div>
-            <div className="py-6 leading-relaxed">
-              <strong className="text-2xl">Wallpapers exclusivos</strong>
-              <p className="text-sm text-gray-200 mt-2">
-                Baixe wallpapers exclusivos do Ignite Lab e personalize a sua
-                máquina
-              </p>
-            </div>
-            <div className="h-full p-6 flex items-center">
-              <CaretRight size={24} />
-            </div>
-          </a>
+          <Card
+            title="Material Complementar"
+            description="Acesse o material complementar para acelerar o seu desenvolvimento"
+            link="https://efficient-sloth-d85.notion.site/Material-complementar-86d4ef35af16471ebc3ae3eba1a378e5"
+          />
+          <Card
+            title="Wallpapers exclusivos"
+            description="Baixe wallpapers exclusivos do Ignite Lab e personalize a sua máquina"
+            link="https://drive.google.com/drive/folders/1mxWnvlqmH7MbVRv2Na9xFNgCQCygM1iR"
+          />
         </div>
       </div>
       <Footer />
