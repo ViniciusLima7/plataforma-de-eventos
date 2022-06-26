@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Footer from "../../components/Footer";
 import { Logo } from "../../components/Logo";
 import { useCreateSubscriberMutation } from "../../graphql/generated";
+import ImgCodeMockup from "/src/assets/code-mockup.png";
 
 export default function Inscricao() {
   const navigate = useNavigate();
@@ -76,7 +77,7 @@ export default function Inscricao() {
         </div>
       </div>
 
-      <img src="/src/assets/code-mockup.png" className="mt-10" alt="" />
+      <img src={ImgCodeMockup} className="mt-10" alt="" />
       <Footer />
     </div>
   );
