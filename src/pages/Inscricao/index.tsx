@@ -3,21 +3,14 @@ import React, { FormEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Footer from "../../components/Footer";
 import { Logo } from "../../components/Logo";
-
-const CREATE_INSCRICAO_MUTATION = gql`
-  mutation CreateSubscriber($name: String!, $email: String!) {
-    createSubscriber(data: { name: $name, email: $email }) {
-      id
-    }
-  }
-`;
+import { useCreateSubscriberMutation } from "../../graphql/generated";
 
 export default function Inscricao() {
   const navigate = useNavigate();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
-  const [createInscricao, { loading }] = useMutation(CREATE_INSCRICAO_MUTATION);
+  const [createInscricao, { loading }] = useCreateSubscriberMutation();
 
   async function handleInscricao(event: FormEvent) {
     event.preventDefault();
