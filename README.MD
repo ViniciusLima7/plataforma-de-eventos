@@ -11,7 +11,7 @@
 
 Plataforma de Eventos, é um sistema Web, onde você pode acompanhar eventos e inscrições.
 
-Link da Aplicação : 
+Link da Aplicação :  https://plataforma-de-eventos.vercel.app
 
 ## 🛠 Tecnologias Usadas :heart_eyes:
 
@@ -22,6 +22,13 @@ Link da Aplicação :
 - TAILWIND
 - VITE
 - POSTCSS
+- GRAPHQL
+- GRAPHCMS
+- REACT ROUTER
+- PHOSPHOR REACT
+- DATE FNS
+- CLASSNAMES
+- APOLLO
 
 # 📝 Licença
 
